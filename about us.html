@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .nav {
+            padding: 1rem;
+            background: #fff;
+            text-align: right;
+        }
+
+        .nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./full.jpg');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 10rem 1rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .yellow-btn {
+            display: inline-block;
+            background:#2786ac;
+            padding: 0.8rem 2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            color: #333;
+            margin-top: 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin: 3rem 0;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 150px;
+            height: 10px;
+            background: #2786ac;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        .feature:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .feature-content {
+            flex: 1;
+            padding: 2rem;
+        }
+
+        .feature-image {
+            flex: 1;
+            position: relative;
+        }
+
+        .feature-image img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 5px;
+        }
+
+        .yellow-circle {
+            position: absolute;
+            width: 110%;
+            height: 120%;
+            background:#2786ac;
+            border-radius: 50%;
+            z-index: -1;
+            top: -10%;
+            left: -10%;
+        }
+
+        .doctors {
+            text-align: center;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .doctor-carousel {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .doctor-card {
+            background: white;
+            padding: 1rem;
+            position: relative;
+        }
+
+        .doctor-card img {
+            width: 200px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .doctor-name {
+            background:#2786ac;
+            padding: 0.5rem;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            min-width: 150px;
+        }
+
+        .benefits {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .benefit-item {
+            flex: 1;
+            margin: 0 1rem;
+        }
+
+        .benefit-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <h1>About Us</h1>
+        <p>Welcome to [Your Clinic Name], where compassion meets excellence in healthcare. We are delighted to have you here and are committed to providing you with the highest quality medical care. At [Your Clinic Name], we prioritize your health and well-being above all else, ensuring that you receive personalized and comprehensive care tailored to your unique needs.</p>
+        <a href="#" class="yellow-btn">Learn More</a>
+    </div>
+
+    <h2 class="section-title">Comprehensive Healthcare Approach</h2>
+
+    <div class="feature">
+        <div class="feature-content">
+            <h3>Medical Excellence</h3>
+            <p>Our doctors bring extensive experience in their specialties, with an ongoing commitment to the latest medical technologies and practices.</p>
+            <a href="#" class="yellow-btn">Read More</a>
+        </div>
+        <div class="feature-image">
+            <div class="yellow-circle"></div>
+            <img src="./img2.png" alt="Medical Care">
+        </div>
+    </div>
+
+    <div class="feature">
+        <div class="feature-content">
+            <h3>Personalized Care</h3>
+            <p>We believe in the importance of comprehensive personal care for each patient, with customized treatment plans tailored to individual needs.</p>
+            <a href="#" class="yellow-btn">Read More</a>
+        </div>
+        <div class="feature-image">
+            <div class="yellow-circle"></div>
+            <img src="./img3.png" alt="Personal Care">
+        </div>
+    </div>
+
+    <div class="feature">
+        <div class="feature-content">
+            <h3>Advanced Medical Technology</h3>
+            <p>We utilize the latest medical technologies and equipment to ensure the best therapeutic outcomes for our patients.</p>
+            <a href="#" class="yellow-btn">Read More</a>
+        </div>
+        <div class="feature-image">
+            <div class="yellow-circle"></div>
+            <img src="./img1.png" alt="Modern Technology">
+        </div>
+    </div>
+
+    <h2 class="section-title">Our Medical Team</h2>
+
+    <div class="doctors">
+        <div class="doctor-carousel">
+            <div class="doctor-card">
+                <img src="./doc3.png" alt="Doctor">
+                <div class="doctor-name">Dr. Michael Smith</div>
+            </div>
+            <div class="doctor-card">
+                <img src="./doc2.png" alt="Doctor">
+                <div class="doctor-name">Dr. Sarah Johnson</div>
+            </div>
+            <div class="doctor-card">
+                <img src="./doc4.png" alt="Doctor">
+                <div class="doctor-name">Dr. James Wilson</div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title">Why Choose Us</h2>
+
+    <div class="benefits">
+        <div class="benefit-item">
+            <div class="benefit-icon">👨‍⚕️</div>
+            <h3>Personal Care</h3>
+            <p>Customized treatment plans for each patient based on their condition and needs</p>
+        </div>
+        <div class="benefit-item">
+            <div class="benefit-icon">🏥</div>
+            <h3>Trusted Expertise</h3>
+            <p>Specialized medical team with years of experience in healthcare</p>
+        </div>
+        <div class="benefit-item">
+            <div class="benefit-icon">⚕️</div>
+            <h3>Advanced Technology</h3>
+            <p>Latest medical equipment and technologies for optimal results</p>
+        </div>
+    </div>
+</body>
+</html>
